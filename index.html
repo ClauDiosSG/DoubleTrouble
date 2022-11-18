@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Double Trouble Gym</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="img/icono.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* imagen header chico */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(img/fondo.jpg);
+  min-height: 100%;
+  background-color: black;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar top -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">DT FITNESS</a>
+    <!-- links sidebar -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">NOSOTROS</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PERSONAL</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> FOTOS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> MEMBRESÍAS</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+    </div>
+
+    <!-- iconos pantalla chica -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- sidebar chica -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PERSONAL</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">FOTOS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">MEMBRESÍAS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+</nav>
+
+<!-- imagen header grande -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small" style="text-shadow: 3px 3px 7px black;">TRABAJA TU CUERPO.</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Trabaja tu cuerpo.</span><br>
+    <span class="w3-large" style="text-shadow: 2px 2px 3px black;">Entrena y ejercita tu cuerpo de manera eficiente y sin perder tiempo y con un coach certificado.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Comienza desde hoy</a></p>
+  </div> 
+</header>
+
+<!-- nosotros -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Conócenos</h3>
+  <p class="w3-center w3-large">Aquí en Doble Trouble somos:</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Modernos</p>
+      <p style="text-align: left;">No solo nuestro equipo es el más moderno, nuestro personal y sistema de valores nos permite recibir a todo tipo de gente que quiera trabajar su cuerpo con brazos abiertos y mente abierta.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Apasionados</p>
+      <p style="text-align: left; ">Nos apasiona el trabajar y ayudar a la gente a trabajar sus cuerpos y mantenerse saludables a traves del proceso.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">De Calidad</p>
+      <p style="text-align: left;">Nuestros estándares de calidad son tan altos como para nuestro equipo y nuestro personal, solo tenemos lo mejor de lo mejor tanto en instalaciones como en entrenadores.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Comprensivos</p>
+      <p style="text-align: left;">Somos un equipo eficiente pero paciente y comprensivos, ya sea en nuestros planes de pago o en nuestros planes de entrenamiento, nunca nos rendimos.</p>
+    </div>
+  </div>
+</div>
+
+<!-- personal -->
+
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Personal</h3>
+  <p class="w3-center w3-large">Conoce a la familia Doble Trouble, la razón por la que somos la mejor opción</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="img/vic.png" alt="Victor Tenorio" style="width:100%">
+        <div class="w3-container">
+          <h3>Victor Tenorio</h3>
+          <p class="w3-opacity">Coach y Co-fundador de Double Trouble</p>
+          <p style="text-align: left;">Soy el coach principal de Double Trouble, me considero una persona eficiente pero comprensiva, soy fanático de Marvel y los videojuegos.
+          Los espero en el gimnasio.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> <a href = "mailto: abc@example.com">Contacto</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="img/cris.png" alt="Cristobal Arias" style="width:100%">
+        <div class="w3-container">
+          <h3>Cristobal Arias</h3>
+          <p class="w3-opacity">Administrador y Co-fundador de Double Trouble</p>
+          <p style="text-align: left;">Soy el administrador principal de DT, me encantan los videojuegos y el deporte, soy una persona responsable, calmada y honesta.
+          Nos vemos en el gym.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> <a href = "mailto: abc@example.com">Contacto</a></button></p>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<!-- instalaciones -->
+
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center"> FOTOS DE NUESTRAS INSTALACIONES</h3>
+  
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="img/gym1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="img/gym5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img/gym8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gym">
+    </div>
+  </div>
+</div>
+
+<!-- imagenes completas-->
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- membresias -->
+
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>MEMBRESÍAS</h3>
+  <p class="w3-large">Elige un plan que se ajuste a ti.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Básico</li>
+        
+        <li class="w3-padding-16"> Acceso a las instalaciones</li>
+        <li class="w3-padding-16"> Coaching</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$500 mxn</h2>
+          <span class="w3-opacity">Mensuales</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large"><a href="pagos.html">Elegir plan</a></button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16">Acceso a las instalaciones</li>
+        <li class="w3-padding-16">Coaching preferencial</li>
+        <li class="w3-padding-16">Plan de ejercicios personalizado</li>
+        <li class="w3-padding-16">Plan de dieta</li>
+        <li class="w3-padding-16">Estacionamiento reservado</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$750 mxn</h2>
+          <span class="w3-opacity">Mensuales</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large"><a href="pagos.html">Elegir plan</a></button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16">Acceso a las instalaciones</li>
+        <li class="w3-padding-16">Coaching</li>
+        <li class="w3-padding-16">Plan de ejercicios personalizado</li>
+        <li class="w3-padding-16">Plan de dieta</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$1200 mxn</h2>
+          <span class="w3-opacity">Mensuales</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large"><a href="pagos.html">Elegir plan</a></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- contacto -->
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTÁCTANOS</h3>
+  <p class="w3-center w3-large">Si te interesa comenzar a trabajar en tu cuerpo mandanos un mensaje o pasa a nuestras instalaciones:</p>
+  <script type="text/javascript" src="https://form.jotform.com/jsform/223144862923861"></script>
+
+
+    <!-- mapa -->
+    <div style="padding:30px 0px 30px 0px" align="center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.4988855385!2d-97.41036039817149!3d18.466678152278497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c5bcd66d5895e7%3A0x48be3e7b9d566e7d!2sParque%20Ecol%C3%B3gico!5e0!3m2!1sen!2smx!4v1667947493894!5m2!1sen!2smx" align="center" width="100%" height="600 px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+<!-- footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>REGRESAR</a>
+  <div class="w3-xlarge w3-section">
+    
+  </div>
+</footer>
+ 
+<script>
+// galeria de imagenes
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// toggle mostrar sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// cerrar sidebar con boton 
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
